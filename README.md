@@ -1,2 +1,2 @@
 # Quantumult-X-Rules
-QX规则
+QX规则自用
