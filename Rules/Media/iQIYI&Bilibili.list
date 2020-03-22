@@ -1,0 +1,6 @@
+# (iQIYI&Bilibili)
+# > 愛奇藝台灣站
+DOMAIN,cache.video.iqiyi.com,iQIYI&Bilibili
+# > bilibili
+DOMAIN,api.bilibili.com,iQIYI&Bilibili
+DOMAIN,upos-hz-mirrorakam.akamaized.net,iQIYI&Bilibili
