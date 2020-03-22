@@ -3,22 +3,24 @@ QX规则自用
 规则整合神机规则和lhie1规则，感谢以上规则作者分享！
 
 Remove weibo ads
-
+```properties
 [rewrite_local]
 ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body wb_launch.js
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status) url script-response-body wb_ad.js
 [mitm]
 hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
-
+```
 
 Display jd historical price
-
+```properties
 [rewrite_local]
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body jd_price.js
 [mitm]
 hostname = api.m.jd.com
-Display taobao historical price
+```
 
+Display taobao historical price
+```properties
 # 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
 [rewrite_local]
 ^http://amdc\.m\.taobao\.com/amdc/mobileDispatch url script-response-body tb_price.js
@@ -32,4 +34,4 @@ hostname = trade-acs.m.taobao.com
 # ip-cidr, 203.119.175.0/24, reject
 # ip-cidr, 106.11.162.0/24, reject
 # ip-cidr, 47.102.83.0/24, reject
-
+```
