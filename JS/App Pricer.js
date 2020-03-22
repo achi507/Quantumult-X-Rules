@@ -11,7 +11,7 @@ Telegram: Neurogram
 GitHub: Neurogram-R
 */
 
-const region = "hk"
+const region = "us"
 const appIds = ["1482985563", "1373567447", "932747118", "1442620678" ,"1442620678","1488616799"]
 
 var cacheData = $persistentStore.read()
